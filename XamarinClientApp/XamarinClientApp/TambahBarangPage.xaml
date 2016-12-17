@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClientApp.TambahBarangPage">
+
+
+  <StackLayout Orientation="Vertical">
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Masukan Kode Barang :" />
+      <Entry x:Name="txtKodeBarang" Placeholder="insert Kode Barang"/>
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Masukan Id Kategori :" />
+      <Entry x:Name="txtIdKategori" Placeholder="insert Id Kategori"/>
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Masukan Id Jenis Motor :" />
+      <Entry x:Name="txtIdJenisMotor" Placeholder="insert Id Jenis Motor"/>
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Masukan Nama Motor :" />
+      <Entry x:Name="txtNama" Placeholder="insert Id Nama"/>
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Masukan Stok :" />
+      <Entry x:Name="txtStok" Placeholder="insert Stok"/>
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Masukan Harga Beli :" />
+      <Entry x:Name="txtHargaBeli" Placeholder="insert Harga Beli"/>
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Masukan Harga Jual :" />
+      <Entry x:Name="txtHargaJual" Placeholder="insert Harga Jual"/>
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Masukan Tanggal Beli :" />
+      <Entry x:Name="txtTanggalBeli" Placeholder="insert Tanggal Beli"/>
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal">
+      <Button x:Name="btnSimpanBarang" Text="Simpan" />
+    </StackLayout>
+  </StackLayout>
+
+
+
+
+</ContentPage>

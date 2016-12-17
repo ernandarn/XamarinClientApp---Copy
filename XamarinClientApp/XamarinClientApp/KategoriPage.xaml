@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClientApp.KategoriPage">
+
+  <StackLayout>
+    <ListView x:Name="listKategori" ItemsSource="{Binding ListKategori}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <TextCell Text="{Binding IdKategori}"
+                    Detail="{Binding NamaKategori}" DetailColor="Red" />
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    <Button x:Name="btnTambahKategori" Text="Tambah" />
+  </StackLayout>
+  
+
+</ContentPage>

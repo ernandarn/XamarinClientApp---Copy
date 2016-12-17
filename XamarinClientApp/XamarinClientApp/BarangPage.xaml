@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClientApp.BarangPage">
+
+  <StackLayout>
+    <!--<Label Text="Masukkan Nama Barang" />-->
+    <Entry x:Name="txtSearchBarang" Placeholder="Masukkan Nama Barang" />
+    <Button x:Name="btnSearchBarang" Text="Search" />
+
+    <!--<Label Text="Masukkan Nama Kategori" />-->
+    <Entry x:Name="txtSearchKat" Placeholder="Masukkan Nama Kategori" />
+    <Button x:Name="btnSearchKat" Text="Search" />
+    
+    
+    <ListView x:Name="listBarang" ItemsSource="{Binding ListBarang}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <TextCell Text="{Binding KodeBarang}"
+                    Detail="{Binding Nama}" DetailColor="Red" />
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    <Button x:Name="btnTambahBarang" Text="Tambah" />
+  </StackLayout>
+</ContentPage>

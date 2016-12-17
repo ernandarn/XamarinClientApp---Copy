@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinClientApp.EditBarangPage">
+  
+  <StackLayout>
+    <ScrollView Orientation="Vertical">
+      <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <Label Text="Kode Barang" />
+        <Entry x:Name="txtKode" Text="{Binding KodeBarang}" />
+
+        <Label Text="ID Kategori" />
+        <Entry x:Name="txtIdKategori" IsEnabled="False" Text="{Binding IdKategori}" />
+
+        <Label Text="ID Jenis Motor" />
+        <Entry x:Name="txtIdJenisMotor" IsEnabled="False" Text="{Binding IdJenisMotor}" />
+
+        <Label Text="Nama Barang" />
+        <Entry x:Name="txtNama" Text="{Binding Nama}" />
+
+        <Label Text="Stok" />
+        <Entry x:Name="txtStok" Text="{Binding Stok}" />
+
+        <Label Text="Harga Beli" />
+        <Entry x:Name="txtHargaBeli" Text="{Binding HargaBeli}" />
+
+        <Label Text="Harga Jual" />
+        <Entry x:Name="txtHargaJual" Text="{Binding HargaJual}" />
+
+        <Label Text="Tanggal Beli" />
+        <Entry x:Name="txtTanggalBeli" Text="{Binding TanggalBeli}" />
+
+
+        <StackLayout Orientation="Horizontal">
+          <Button x:Name="btnEditBarang" Text="Edit" />
+          <Button x:Name="btnDeleteBarang" Text="Delete" />
+        </StackLayout>
+      </StackLayout>     
+    </ScrollView> 
+  </StackLayout>
+</ContentPage>
